@@ -11,7 +11,7 @@ $ npm i @hugohammarstrom/gutenberg-parser
 ## Usage
 
 ```js
-const parser = require("./lib").default;
+const parser = require("@hugohammarstrom/gutenberg-parser").default;
 
 (async function() {
   const res = await parser.root(
