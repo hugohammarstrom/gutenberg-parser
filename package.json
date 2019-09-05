@@ -1,0 +1,24 @@
+{
+  "name": "@hugohammarstrom/gutenberg-parser",
+  "version": "0.0.11",
+  "description": "",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel src -d lib",
+    "build-wasm": "sh scripts/build.sh",
+    "prepack": "npm run build-wasm && npm run build"
+  },
+  "files": [
+    "package.json",
+    "lib/*"
+  ],
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5"
+  }
+}
