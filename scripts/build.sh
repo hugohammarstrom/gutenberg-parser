@@ -3,7 +3,7 @@ mkdir lib
 
 which cargo > /dev/null || \
 		(echo 'Please, install rust' && exit 1)
-git clone https://github.com/Hywan/gutenberg-parser-rs.git --depth 1 --branch=master library
+git clone https://github.com/Hywan/gutenberg-parser-rs.git -b 'master' --single-branch --depth 1  library
 rm -rf library/.git --force
 (cd library && just build-wasm) || exit 1
 
